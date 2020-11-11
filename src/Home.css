@@ -1,0 +1,141 @@
+.home_banner{
+	background: url('https://www.powerpointbackground.net/wp-content/uploads/2016/03/dark-brick-wall-background.jpg') no-repeat ;
+	background-size: 100% auto;
+    background-position: center top;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 70px;
+}
+
+.home_profile_div{
+	padding-top:80px;
+}
+
+.home_profile{
+	width:400px;
+	height:400px;
+	object-fit: cover;
+	padding:40px 20px;
+	margin:50px 25px;
+}
+
+.home_text{
+	margin: 20px 30px;
+	padding:10px;
+}
+
+
+.home_text>button{
+	padding:10px;
+	margin:10px 10px 10px 0px;
+	background: crimson;
+	color:white;
+	border:2px solid crimson;
+	outline: none;
+}
+
+.home_text>button:hover{
+	transition:0.7s ease;
+	background: rgb(22,35,61);
+	color: white;
+	outline: none;
+	border:2px solid white;
+	cursor:pointer;
+}
+
+.home_text_1{
+	font-family: Batang;
+	font-size: 40px;
+	font-weight: 1000;
+	color: rgb(208,214,247);
+}
+
+.home_text_1 >span{
+	color: rgb(166,14,159);
+}
+
+.home_text_2{
+	font-family: BatangChe;
+	font-size: 80px;
+	font-weight: 1000;
+	color:  white;
+}
+
+.home_text_3{
+	font-family: BatangChe;
+	font-size: 40px;
+	font-weight: 1000;
+	color: rgb(208,214,247);
+}
+
+.home_text_3 > span{
+	font-family: BatangChe;
+	font-size: 40px;
+	font-weight: 1000;
+	color: rgb(233,41,149);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 526px) {
+	.home_text_1{
+		font-size: 40px;
+	}
+
+	.home_text_2{
+		font-size: 60px;
+	}
+
+	.home_text_3{
+		font-size: 40px;
+		
+	}
+
+	.home_text_3 > span{
+		font-size: 40px;	
+	}
+
+
+}
+
+
+@media only screen and (max-width: 927px) {
+	.home_profile_div{
+		display: none;
+	}
+}
+
+@media (max-width: 450px) {
+	.home_profile{
+		width:600px;
+		height:600px;
+		object-fit: cover;
+	}
+
+	.home_text_1{
+		font-size: 20px;
+	}
+
+	.home_text_2{
+		font-size: 40px;
+	}
+
+	.home_text_3{
+		font-size: 20px;
+		
+	}
+
+	.home_text_3 > span{
+		font-size: 20px;	
+	}
+
+}

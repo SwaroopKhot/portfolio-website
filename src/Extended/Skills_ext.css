@@ -1,0 +1,90 @@
+.skill_container{
+	display: flex;
+	flex-direction: column;
+	margin:20px 10px 30px 10px;
+	padding-bottom: 50px;
+	border-bottom:1px solid #111;
+}
+
+.skill_title{
+	margin-bottom:30px;
+}
+
+.skill_title > h2{
+	font-family: BatangChe;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom:20px;
+	position:relative;
+	padding:10px 10px 15px 10px;
+
+}
+
+.skill_title > h2::before{
+	content:"";
+	position: absolute;
+	width:250px;
+	height: 3px;
+	background: #111;
+	bottom: 0px;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+.skill_title > h2::after{
+	content:"my other skills";
+	position: absolute;
+	bottom:-18px;
+	left:50%;
+	font-family: sans-serif;
+	font-size: 20px;
+	background: white;
+	padding:6px 10px;
+	transform: translateX(-50%);
+	color: crimson;
+}
+
+
+.skill_col{
+	display: flex;
+	flex-direction: column;
+	padding:10px;
+	margin:10px;
+	border:1px solid crimson;
+
+	margin-bottom: 40px;
+}
+
+.skill_col>h3{
+	margin:5px;
+}
+
+
+.skill_row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	border-bottom: 1px solid crimson;
+}
+
+
+.left_content{
+	flex:0.4;
+	margin:5px;
+	padding:5px;
+}
+
+.right_content{
+	flex:0.6;
+	margin:5px;
+	padding:5px;
+}
+
+
+
+
+
+
+
+
+

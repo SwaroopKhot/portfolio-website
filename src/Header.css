@@ -1,0 +1,90 @@
+.header_container{
+	position: sticky;
+	top:0;
+	display:flex;
+	justify-content:space-between;
+	flex-direction: row;
+	z-index: 999;
+	height:8vh;
+	align-items: center;
+}
+
+.header_title{
+	align-content: center;
+	margin:5px 10px;
+	padding:5px 10px;
+}
+
+.head_titl1{
+	color: white;
+	font-family: Lucida Calligraphy;
+	font-size: 23px;
+	font-weight: 800;
+}
+
+.head_titl2{
+	color:black;
+	font-family: Kristen ITC;
+	font-size: 23px;
+	font-weight: 700;
+}
+
+
+.header_navlink{
+	display:flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	margin-left: 100px;
+	color:white;
+}
+
+.Links{
+	border:1px solid white;
+	margin:5px 10px;
+	padding:5px 10px;
+	width:90px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+
+.Links:hover{
+	background:white;
+	transition:0.7s ease;
+	color:black;
+}
+
+.menu{
+	text-decoration: none;
+	display: none;
+}
+
+.toggle{
+	color:white;
+	padding:10px;
+	margin:10px;
+}
+
+
+
+
+
+
+
+.header_drawer{
+	display: none;
+}
+
+
+
+@media (max-width: 931px) {
+	.header_navlink{
+		display: none;
+	}
+
+
+	.menu{
+		display:flex;
+	}
+}

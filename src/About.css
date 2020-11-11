@@ -1,0 +1,227 @@
+.about_container{
+	display: flex;
+	flex-direction: column;
+	margin:20px 10px 30px 10px;
+	padding-bottom: 50px;
+	border-bottom:1px solid #111;
+}
+
+
+.about_title > h2{
+	font-family: BatangChe;
+	font-size: 60px;
+	text-align: center;
+	margin-bottom:20px;
+	position:relative;
+	padding:10px 10px 15px 10px;
+}
+
+.about_title > h2::before{
+	content:"";
+	position: absolute;
+	width:270px;
+	height: 3px;
+	background: #111;
+	bottom: 0px;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+.about_title > h2::after{
+	content:"who am i";
+	position: absolute;
+	bottom:-12px;
+	left:50%;
+	font-family: sans-serif;
+	font-size: 20px;
+	background: white;
+	padding:6px 10px;
+	transform: translateX(-50%);
+	color: crimson;
+}
+
+
+.about_details{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.about_profile_img >img{
+	width:400px;
+	height:400px;
+	object-fit: cover;
+	border: 0px solid transparent;
+	border-radius: 200px;
+	padding: 20px;
+	margin:10px;
+}
+
+
+.profile_links{
+	background: crimson;
+}
+
+.profile_links> ui{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding:10px;
+}
+
+.profile_links> ui>i:hover{
+	transition: 0.3s ease;
+	cursor:pointer;
+	color:white;
+}
+
+
+.about_content > h2{
+	margin: 10px 10px 15px 10px;
+}
+
+.about_content >p{
+	font-size: 20px;
+	margin: 10px 10px 15px 10px;
+}
+
+.about_content >p> span{
+	color : crimson;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+}
+
+
+
+.about_ncc{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 10px 10px 15px 10px;
+}
+
+.about_ncc_logo{
+	margin-right: 10px;
+}
+
+.about_ncc_content>p{
+	font-size: 20px;
+}
+
+.about_ncc_content>p>span{
+	color : crimson;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+}
+
+.india_flag{
+	width:30px;
+	height:30px;
+	object-fit: cover;
+}
+
+
+
+
+.about_content> button{
+	padding: 10px 25px;
+	margin: 5px 10px;
+	background-color: crimson;
+	color:white;
+	outline: none;
+	border: 2px solid crimson;
+	border-radius: 4px;
+}
+
+.about_content> button > span{
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.about_content> button:hover{
+	background: white;
+	color: crimson;
+	border: 2px solid;
+	cursor:pointer;
+	transition: 0.6s ease;
+}
+
+
+
+
+
+
+
+@media (max-width: 937px) {
+	.about_profile_img>img{
+		width:350px;
+		height:350px;
+	}
+
+	.about_content{
+		flex:1;
+	}
+	
+}
+
+
+@media (max-width: 348px) {
+
+	.about_profile_img >img{
+
+		padding: 20px 10px;
+		margin:10px 0px;
+	}
+}
+
+
+
+@media (max-width: 310px) {
+	.about_profile_img >img{
+		width:100px;
+		height: 100px;
+		border-radius: 200px;
+	}
+}
+
+@media (max-width: 874px) {
+	.about_profile_img>img{
+		width:300px;
+		height:300px;
+	}
+
+	.about_content >p{
+		margin: 10px 10px 15px 10px;
+
+	}
+
+	.about_content >p> span{
+		color : crimson;
+	}
+	.about_content{
+		flex:1;
+	}
+	
+}
+
+
+
+
+@media (max-width: 800px) {
+	.about_profile{
+		width:100%;
+	}
+
+	.about_profile{
+		text-align: center
+	}
+
+	.profile_links{
+		width: 100%;
+	}
+
+	.about_details{
+		flex-direction: column;
+	}
+}
